@@ -9,6 +9,6 @@ memUsage=$(free -m | awk '/Mem/{print $3}')
 # Print the usage
 echo "CPU Usage: $cpuUsage%"
 echo "Memory Usage: $memUsage MB"
-df -H
-  
+#df -H
+sleep 0.5  
 exec "${original_args[@]}"
