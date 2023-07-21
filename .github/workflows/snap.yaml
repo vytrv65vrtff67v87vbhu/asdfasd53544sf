@@ -21,7 +21,6 @@ jobs:
       id: build-snap
       with:
         snapcraft-args: '--enable-experimental-extensions --destructive-mode'
-        snapcraft-channel: '7.x/candidate'
 
     - run: |
         touch done.txt
